@@ -1,0 +1,160 @@
+/* --- PREMIUM TYPOGRAPHY & DESIGN SYSTEM DESIGN CORE --- */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Poppins:wght@400;500;600;700&display=swap');
+
+:root {
+  --color-primary: #2E7D32;
+  --color-secondary: #8D6E63;
+  --color-accent: #F9A825;
+  --color-bg: #FFFDF7;
+  --color-dark: #1F2937;
+  --color-light-gray: #F5F5F5;
+  --color-success: #43A047;
+  --font-headings: 'Poppins', sans-serif;
+  --font-body: 'Inter', sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  cursor: none !important; /* Managed by premium Custom JS Cursor */
+}
+
+@media (max-width: 1024px) {
+  * { cursor: auto !important; }
+}
+
+body {
+  background-color: var(--color-bg);
+  color: var(--color-dark);
+  font-family: var(--font-body);
+  overflow-x: hidden;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-headings);
+  font-weight: 600;
+  color: var(--color-dark);
+}
+
+/* --- CUSTOM PREMIUM SCROLLBAR --- */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: var(--color-bg);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--color-secondary);
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-primary);
+}
+
+/* --- PREMIUM UI GLASSMORPHISM & UTILITIES --- */
+.glass-nav {
+  background: rgba(255, 253, 247, 0.75);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border-bottom: 1px solid rgba(46, 125, 50, 0.08);
+}
+
+.glass-card {
+  background: rgba(255, 255, 255, 0.65);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(141, 110, 99, 0.1);
+  box-shadow: 0 8px 32px 0 rgba(31, 41, 55, 0.03);
+}
+
+/* --- BRAND CUSTOM GRADIENT BUTTONS --- */
+.btn-premium-gradient {
+  background: linear-gradient(135deg, var(--color-primary) 0%, #1B5E20 100%);
+  color: #FFFFFF;
+  position: relative;
+  z-index: 1;
+  transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+  overflow: hidden;
+}
+
+.btn-premium-gradient::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; width: 100%; height: 100%;
+  background: linear-gradient(135deg, var(--color-accent) 0%, #F57F17 100%);
+  z-index: -1;
+  opacity: 0;
+  transition: opacity 0.4s ease;
+}
+
+.btn-premium-gradient:hover::before {
+  opacity: 1;
+}
+
+/* --- CUSTOM INTERACTIVE CURSOR --- */
+.custom-cursor-dot, .custom-cursor-ball {
+  pointer-events: none;
+  position: fixed;
+  top: 0; left: 0;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  z-index: 99999;
+  transition: width 0.3s, height 0.3s, background-color 0.3s;
+}
+
+.custom-cursor-dot {
+  width: 6px;
+  height: 6px;
+  background-color: var(--color-accent);
+}
+
+.custom-cursor-ball {
+  width: 36px;
+  height: 36px;
+  border: 1px solid var(--color-primary);
+  opacity: 0.6;
+}
+
+/* --- PRELOADER ANIMATION --- */
+#preloader {
+  position: fixed;
+  top: 0; left: 0; width: 100vw; height: 100vh;
+  background: var(--color-bg);
+  z-index: 999999;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.spinner {
+  width: 50px;
+  height: 50px;
+  border: 3px solid rgba(46, 125, 50, 0.1);
+  border-radius: 50%;
+  border-top-color: var(--color-primary);
+  animation: spin 1s ease-in-out infinite;
+}
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+
+/* --- TIMELINE COMPONENT GRAPHICS --- */
+.timeline-container::before {
+  content: '';
+  position: absolute;
+  left: 50%;
+  width: 2px;
+  height: 100%;
+  background: linear-gradient(to bottom, var(--color-primary), var(--color-secondary));
+  transform: translateX(-50%);
+}
+
+@media(max-width: 768px) {
+  .timeline-container::before {
+    left: 20px;
+  }
+}
