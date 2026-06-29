@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>VedicAgro Premium | Indian Organic Agricultural Grains & Pulses</title>
+  <meta name="description" content="Premium corporate exporters and suppliers of high grade organic Indian grains, pulses, cereals, flour and seeds. Production ready, quality tested enterprise agro pipeline.">
+  <!-- Tailwind Engine CSS CDN integration -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: '#2E7D32',
+            secondary: '#8D6E63',
+            accent: '#F9A825',
+            bgCustom: '#FFFDF7',
+            darkCustom: '#1F2937',
+            lightGray: '#F5F5F5'
+          }
+        }
+      }
+    }
+  </script>
+  <!-- Third-party animations framework bundles -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="bg-bgCustom text-darkCustom font-sans">
+
+  <!-- PRELOADER -->
+  <div id="preloader">
+    <div class="spinner mb-4"></div>
+    <h2 class="text-xs tracking-[0.3em] uppercase text-secondary font-semibold">VedicAgro Corporation</h2>
+  </div>
+
+  <!-- ANNOUNCEMENT SYSTEM BAR -->
+  <div class="w-full bg-emerald-900 text-amber-50 text-xs py-2 px-4 flex justify-between items-center tracking-wider font-light border-b border-emerald-800">
+    <div class="hidden md:flex items-center space-x-4">
+      <span>✦ 100% Traceable Organic Source</span>
+      <span>✦ Free Delivery on Bulk Enterprise Orders</span>
+    </div>
+    <div class="mx-auto md:mx-auto text-center font-medium uppercase tracking-[0.15em]">
+      Premium Export Quality Agricultural Commodities
+    </div>
+    <div class="hidden lg:flex items-center space-x-2">
+      <span class="inline-block w-2 h-2 rounded-full bg-amber-400 animate-ping"></span>
+      <span>NABL Laboratory Verified Laboratory Reports Included</span>
+    </div>
+  </div>
+
+  <!-- ENTERPRISE GLASS CONTROLLER STICKY NAVIGATION -->
+  <nav class="sticky top-0 z-50 glass-nav transition-all duration-300">
+    <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+      <a href="index.html" class="flex items-center space-x-3 group">
+        <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-emerald-700 to-amber-500 flex items-center justify-center text-white font-bold text-xl shadow-md transform group-hover:rotate-12 transition-transform duration-300">V</div>
+        <div>
+          <span class="block text-lg font-bold tracking-tight text-emerald-900 font-heading">VEDICAGRO</span>
+          <span class="block text-[9px] tracking-[0.4em] uppercase text-secondary -mt-1 font-sans">Commodities</span>
+        </div>
+      </a>
+      
+      <!-- DESKTOP INTERFACE NAV MAP -->
+      <div class="hidden lg:flex items-center space-x-8 font-medium text-sm text-gray-700 tracking-wide">
+        <a href="index.html" class="text-emerald-700 hover:text-emerald-800 transition-colors">Home</a>
+        <a href="about.html" class="hover:text-emerald-800 transition-colors">About</a>
+        <a href="products.html" class="hover:text-emerald-800 transition-colors">Products</a>
+        <a href="wholesale.html" class="hover:text-emerald-800 transition-colors">Wholesale Operations</a>
+        <a href="quality.html" class="hover:text-emerald-800 transition-colors">Quality Assurance</a>
+        <a href="contact.html" class="hover:text-emerald-800 transition-colors">Contact</a>
+      </div>
+
+      <!-- SYSTEM CALL-TO-ACTIONS CORE -->
+      <div class="hidden lg:flex items-center space-x-4">
+        <a href="https://wa.me/910000000000" class="flex items-center space-x-2 border border-emerald-700/30 px-4 py-2 rounded-xl text-emerald-800 font-semibold text-xs tracking-wider uppercase hover:bg-emerald-50 transition-all">
+          <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946C.06 5.348 5.397.01 12.008.01c3.202.001 6.212 1.246 8.477 3.514 2.266 2.268 3.507 5.28 3.505 8.484-.004 6.657-5.34 11.997-11.953 11.997-2.005-.001-3.973-.502-5.734-1.456L0 24zm6.59-4.846c1.6.95 3.188 1.449 4.825 1.451 5.436 0 9.86-4.37 9.864-9.799.002-2.63-1.023-5.101-2.885-6.965C16.528 1.975 14.069  Bristle 953 11.45 9.53c-5.438 0-9.862 4.371-9.866 9.801-.002 1.776.48 3.51 1.395 5.025l-.993 3.624 3.708-.973zm12.393-5.305c-.33-.165-1.951-.963-2.251-1.074-.3-.109-.518-.165-.736.165-.218.329-.846 1.074-1.037 1.293-.19.218-.381.244-.711.079-.33-.165-1.393-.513-2.656-1.642-.982-.877-1.645-1.961-1.837-2.29-.19-.329-.02-.507.145-.671.149-.147.33-.385.495-.578.165-.192.22-.33.33-.55.11-.219.055-.412-.028-.577-.083-.165-.736-1.771-1.009-2.431-.266-.639-.536-.55-.736-.56l-.629-.01c-.218 0-.573.082-.872.411-.3.33-1.146 1.118-1.146 2.724 0 1.605 1.169 3.158 1.333 3.377.165.22 2.301 3.513 5.574 4.925.779.335 1.387.535 1.861.686.784.248 1.497.213 2.06.129.628-.094 1.951-.798 2.224-1.57.272-.771.272-1.433.191-1.57-.081-.137-.297-.219-.628-.384z"/></svg>
+          <span>Bulk Room</span>
+        </a>
+        <a href="products.html" class="btn-premium-gradient px-6 py-2.5 rounded-xl font-semibold text-xs tracking-wider uppercase shadow-lg shadow-emerald-900/10">
+          Corporate Procurement
+        </a>
+      </div>
+
+      <!-- HAMBURGER PHONE INTERFACE NAVIGATION CONTROLLER -->
+      <button id="mobile-menu-btn" class="lg:hidden p-2 text-emerald-950 focus:outline-none" aria-label="Toggle Navigation Screen Menu">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
+      </button>
+    </div>
+
+    <!-- RESPONSIVE MOBILE EXPANSION FRAMEWORK -->
+    <div id="mobile-menu" class="hidden lg:hidden flex-col bg-bgCustom border-b border-emerald-900/10 px-6 py-6 space-y-4 shadow-xl">
+      <a href="index.html" class="font-medium text-emerald-800">Home</a>
+      <a href="about.html" class="font-medium text-gray-600">About</a>
+      <a href="products.html" class="font-medium text-gray-600">Products</a>
+      <a href="wholesale.html" class="font-medium text-gray-600">Wholesale Operations</a>
+      <a href="quality.html" class="font-medium text-gray-600">Quality Assurance</a>
+      <a href="contact.html" class="font-medium text-gray-600">Contact</a>
+      <hr class="border-emerald-900/5">
+      <div class="flex flex-col space-y-3 pt-2">
+        <a href="https://wa.me/910000000000" class="text-center bg-emerald-50 text-emerald-800 py-3 rounded-xl font-medium text-sm">WhatsApp Terminal</a>
+        <a href="products.html" class="text-center bg-emerald-700 text-white py-3 rounded-xl font-medium text-sm shadow-md">Procure Catalogue</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- LUXURY HERO EMBED BLOCK -->
+  <header class="relative w-full min-h-[90vh] flex items-center bg-zinc-900 overflow-hidden">
+    <!-- Visual high contrast dynamic overlay layer graphics placeholder -->
+    <img src="https://images.unsplash.com/photo-1574323347407-f5e1ad6d020b?auto=format&fit=crop&q=80&w=1920" alt="Premium Indian Golden Wheat Fields harvesting" class="absolute inset-0 w-full h-full object-cover opacity-35 transform scale-105 pointer-events-none">
+    <div class="absolute inset-0 bg-gradient-to-r from-emerald-950/90 via-emerald-900/60 to-transparent"></div>
+    
+    <div class="relative max-w-7xl mx-auto px-6 py-20 w-full z-10 grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+      <div class="lg:col-span-8 space-y-6">
+        <div class="inline-flex items-center space-x-2 bg-amber-400/20 border border-amber-400/30 px-3 py-1 rounded-full text-amber-300 text-xs font-medium tracking-widest uppercase hero-reveal">
+          <span>👑 B2B Premium Agritech Enterprise Supply</span>
+        </div>
+        <h1 class="text-4xl md:text-6xl lg:text-7xl font-bold tracking-tight text-white font-heading leading-tight hero-reveal">
+          Premium Indian <br><span class="text-transparent bg-clip-text bg-gradient-to-r from-amber-400 to-emerald-400">Grains & Pulses</span>
+        </h1>
+        <p class="text-gray-300 text-base md:text-xl max-w-2xl font-light leading-relaxed hero-reveal">
+          Cultivating pristine structural agricultural solutions across India. Single origin, chemical checked, premium sorted grains, pulses, and organic millets custom certified for global networks.
+        </p>
+        <div class="pt-4 flex flex-wrap gap-4 hero-reveal">
+          <a href="products.html" class="btn-premium-gradient px-8 py-4 rounded-xl font-semibold text-sm tracking-wider uppercase shadow-xl shadow-emerald-900/40">
+            Explore Collection
+          </a>
+          <a href="wholesale.html" class="bg-white/10 hover:bg-white/20 border border-white/20 backdrop-blur-md text-white px-8 py-4 rounded-xl font-semibold text-sm tracking-wider uppercase transition-all">
+            Contact Desk
+          </a>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Fine Scroll Pointer Track -->
+    <div class="absolute bottom-8 left-1/2 transform -translate-x-1/2 flex flex-col items-center space-y-2 opacity-60">
+      <span class="text-[9px] text-white tracking-[0.3em] uppercase">Scroll to Discover</span>
+      <div class="w-1.5 h-8 border border-white/30 rounded-full flex justify-center p-0.5">
+        <div class="w-1 h-2 bg-amber-400 rounded-full animate-bounce"></div>
+      </div>
+    </div>
+  </header>
+
+  <!-- ENTERPRISE CORPORATE STACK TRADITIONAL STATISTICS INFOGRAPHICS -->
+  <section class="relative -mt-12 max-w-7xl mx-auto px-6 z-20">
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-6 bg-white border border-emerald-900/5 shadow-2xl shadow-emerald-950/5 rounded-2xl p-8">
+      <div class="text-center p-4 border-r border-gray-100 last:border-0" data-aos="fade-up" data-aos-delay="100">
+        <span class="block text-3xl md:text-4xl font-bold text-emerald-800 font-heading tracking-tight"><span class="stat-counter" data-target="10000">0</span>+</span>
+        <span class="text-xs text-gray-500 font-medium tracking-wide uppercase mt-1 block">Metric Tons Supplied</span>
+      </div>
+      <div class="text-center p-4 border-r border-gray-100 last:border-0" data-aos="fade-up" data-aos-delay="200">
+        <span class="block text-3xl md:text-4xl font-bold text-emerald-800 font-heading tracking-tight"><span class="stat-counter" data-target="500">0</span>+</span>
+        <span class="text-xs text-gray-500 font-medium tracking-wide uppercase mt-1 block">Contracted Farms</span>
+      </div>
+      <div class="text-center p-4 border-r border-gray-100 last:border-0" data-aos="fade-up" data-aos-delay="300">
+        <span class="block text-3xl md:text-4xl font-bold text-emerald-800 font-heading tracking-tight"><span class="stat-counter" data-target="20">0</span>+</span>
+        <span class="text-xs text-gray-500 font-medium tracking-wide uppercase mt-1 block">States Serviced</span>
+      </div>
+      <div class="text-center p-4 last:border-0" data-aos="fade-up" data-aos-delay="400">
+        <span class="block text-3xl md:text-4xl font-bold text-emerald-800 font-heading tracking-tight"><span class="stat-counter" data-target="99">0</span>.%</span>
+        <span class="text-xs text-gray-500 font-medium tracking-wide uppercase mt-1 block">Purity Retention</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTOR 01: PUREBRED CATEGORY CORE CARD SHIFT -->
+  <section class="max-w-7xl mx-auto px-6 py-24">
+    <div class="text-center max-w-2xl mx-auto mb-16" data-aos="fade-up">
+      <span class="text-xs tracking-[0.25em] uppercase text-secondary font-semibold block mb-2">Pristine Architecture</span>
+      <h2 class="text-3xl md:text-4xl font-bold tracking-tight font-heading">Agricultural Classifications</h2>
+      <p class="text-gray-500 text-sm mt-3">Cultivated organically across diverse bio-zones in India under clean regulatory compliance frameworks.</p>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+      <!-- Card Structure Component Group -->
+      <div class="group relative rounded-2xl overflow-hidden shadow-md glass-card transition-all duration-500 hover:-translate-y-2 hover:shadow-2xl hover:shadow-emerald-950/10" data-aos="fade-up" data-aos-delay="100">
+        <div class="h-64 overflow-hidden relative">
+          <img src="https://images.unsplash.com/photo-1586201375761-83865001e31c?auto=format&fit=crop&q=80&w=800" alt="Premium Grains Category" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700">
+          <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent"></div>
+          <h3 class="absolute bottom-6 left-6 text-xl font-bold text-white font-heading">Grains & Cereals</h3>
+        </div>
+        <div class="p-6">
+          <p class="text-gray-600 text-sm mb-4">Elite Sharbati Wheat, clean Pearl Millet (Bajra), Sorghum, and Yellow Maize sourced directly from fertile operational belts.</p>
+          <a href="products.html" class="text-emerald-700 font-semibold text-xs uppercase tracking-wider inline-flex items-center group-hover:text-emerald-800">
+            Procure Catalog <span class="ml-2 transform group-hover:translate-x-1 transition-transform">→</span>
+          </a>
+        </div>
+      </div>
+
+      <div class="group relative rounded-2xl overflow-hidden shadow-md glass-card transition-all duration-500 hover:-translate-y-2 hover:shadow-2xl hover:shadow-emerald-950/10" data-aos="fade-up" data-aos-delay="200">
+        <div class="h-64 overflow-hidden relative">
+          <img src="https://images.unsplash.com/photo-1547058886-f402e60c876c?auto=format&fit=crop&q=80&w=800" alt="Premium Pulses" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700">
+          <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent"></div>
+          <h3 class="absolute bottom-6 left-6 text-xl font-bold text-white font-heading">Pulses & Dals</h3>
+        </div>
+        <div class="p-6">
+          <p class="text-gray-600 text-sm mb-4">Luminous Toor Dal, Moong Dal, and premium large calibrated Kabuli Chana unpolished for nutrient retention.</p>
+          <a href="products.html" class="text-emerald-700 font-semibold text-xs uppercase tracking-wider inline-flex items-center group-hover:text-emerald-800">
+            Procure Catalog <span class="ml-2 transform group-hover:translate-x-1 transition-transform">→</span>
+          </a>
+        </div>
+      </div>
+
+      <div class="group relative rounded-2xl overflow-hidden shadow-md glass-card transition-all duration-500 hover:-translate-y-2 hover:shadow-2xl hover:shadow-emerald-950/10" data-aos="fade-up" data-aos-delay="300">
+        <div class="h-64 overflow-hidden relative">
+          <img src="https://images.unsplash.com/photo-1599599810769-bcde5a160d32?auto=format&fit=crop&q=80&w=800" alt="Oil Seeds and Spices" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700">
+          <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent"></div>
+          <h3 class="absolute bottom-6 left-6 text-xl font-bold text-white font-heading">High-Oil Seeds</h3>
+        </div>
+        <div class="p-6">
+          <p class="text-gray-600 text-sm mb-4">Natural Mustard seeds, protein dense Flax seeds, and machine-sorted Sesame seeds certified for multi-stage extraction.</p>
+          <a href="products.html" class="text-emerald-700 font-semibold text-xs uppercase tracking-wider inline-flex items-center group-hover:text-emerald-800">
+            Procure Catalog <span class="ml-2 transform group-hover:translate-x-1 transition-transform">→</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTOR 02: THE PRODUCTION ENGINE TIMELINE -->
+  <section class="w-full bg-emerald-950 text-white py-24 overflow-hidden">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="text-center max-w-2xl mx-auto mb-20">
+        <span class="text-xs tracking-[0.25em] uppercase text-amber-400 font-semibold block mb-2">Operational Integrity</span>
+        <h2 class="text-3xl md:text-4xl font-bold tracking-tight text-white font-heading">Our Processing Framework</h2>
+        <p class="text-emerald-200/60 text-sm mt-3">From algorithmic soil choice metrics to micro-calibrated humidity packaging layouts.</p>
+      </div>
+
+      <div class="relative timeline-container max-w-4xl mx-auto space-y-12">
+        <!-- Timeline Stage -->
+        <div class="flex flex-col md:flex-row items-center justify-between relative group" data-aos="fade-right">
+          <div class="md:w-1/2 md:pr-12 text-center md:text-right">
+            <h4 class="text-xl font-bold text-amber-400 font-heading">01. Agronomic Farm Selection</h4>
+            <p class="text-emerald-100/70 text-sm mt-2">Soil composition validation checks and geographic zoning analytics map product cultivation parameters.</p>
+          </div>
+          <div class="absolute left-1/2 transform -translate-x-1/2 w-4 h-4 rounded-full bg-amber-400 border-4 border-emerald-950 z-10 hidden md:block group-hover:scale-150 transition-transform"></div>
+          <div class="md:w-1/2 hidden md:block"></div>
+        </div>
+
+        <div class="flex flex-col md:flex-row items-center justify-between relative group" data-aos="fade-left">
+          <div class="md:w-1/2 hidden md:block"></div>
+          <div class="absolute left-1/2 transform -translate-x-1/2 w-4 h-4 rounded-full bg-amber-400 border-4 border-emerald-950 z-10 hidden md:block group-hover:scale-150 transition-transform"></div>
+          <div class="md:w-1/2 md:pl-12 text-center md:text-left">
+            <h4 class="text-xl font-bold text-amber-400 font-heading">02. Buhler Sorting Protocols</h4>
+            <p class="text-emerald-100/70 text-sm mt-2">Advanced optical color sorters purge external variant material profiles to achieve 99.9% product clarity.</p>
+          </div>
+        </div>
+
+        <div class="flex flex-col md:flex-row items-center justify-between relative group" data-aos="fade-right">
+          <div class="md:w-1/2 md:pr-12 text-center md:text-right">
+            <h4 class="text-xl font-bold text-amber-400 font-heading">03. NABL Lab Verification</h4>
+            <p class="text-emerald-100/70 text-sm mt-2">Moisture index stabilization assessment guarantees zero chemical residue retention ceilings.</p>
+          </div>
+          <div class="absolute left-1/2 transform -translate-x-1/2 w-4 h-4 rounded-full bg-amber-400 border-4 border-emerald-950 z-10 hidden md:block group-hover:scale-150 transition-transform"></div>
+          <div class="md:w-1/2 hidden md:block"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TESTIMONIAL CAROUSEL ENGINE -->
+  <section class="max-w-7xl mx-auto px-6 py-24">
+    <div class="text-center max-w-2xl mx-auto mb-16">
+      <span class="text-xs tracking-[0.25em] uppercase text-secondary font-semibold block mb-2">Global Statements</span>
+      <h2 class="text-3xl md:text-4xl font-bold tracking-tight font-heading">Partner Endorsements</h2>
+    </div>
+
+    <div class="swiper testimonialSwiper pb-12">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide p-8 rounded-2xl glass-card">
+          <div class="flex items-center space-x-1 text-amber-500 mb-4">★★★★★</div>
+          <p class="text-gray-600 text-sm italic">"VedicAgro's consistency with moisture matching protocols metrics has elevated our premium milling operations output. Truly enterprise standard."</p>
+          <div class="mt-6 flex items-center space-x-3">
+            <div class="w-10 h-10 rounded-full bg-emerald-100 flex items-center justify-center font-bold text-emerald-800 text-sm">R</div>
+            <div>
+              <h5 class="text-sm font-bold text-gray-800">Rajesh Malhotra</h5>
+              <p class="text-[10px] text-gray-400 uppercase tracking-wider">Malhotra Millers Pvt. Ltd.</p>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide p-8 rounded-2xl glass-card">
+          <div class="flex items-center space-x-1 text-amber-500 mb-4">★★★★★</div>
+          <p class="text-gray-600 text-sm italic">"The transparency of export documentation and custom pesticide residue profiling updates is refreshing. Highly recommended for international distribution."</p>
+          <div class="mt-6 flex items-center space-x-3">
+            <div class="w-10 h-10 rounded-full bg-emerald-100 flex items-center justify-center font-bold text-emerald-800 text-sm">A</div>
+            <div>
+              <h5 class="text-sm font-bold text-gray-800">Amit Desai</h5>
+              <p class="text-[10px] text-gray-400 uppercase tracking-wider">Apex Foods Overseas</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="swiper-pagination"></div>
+    </div>
+  </section>
+
+  <!-- ENTERPRISE INTEGRATED CONVERSION STAGE -->
+  <section class="max-w-7xl mx-auto px-6 mb-24" data-aos="zoom-in">
+    <div class="relative w-full rounded-3xl bg-gradient-to-tr from-emerald-900 to-emerald-950 p-12 md:p-20 overflow-hidden text-center shadow-2xl">
+      <div class="absolute inset-0 bg-[radial-gradient(circle_at_top_right,rgba(249,168,37,0.15),transparent_50%)]"></div>
+      <div class="relative z-10 max-w-3xl mx-auto space-y-6">
+        <h2 class="text-3xl md:text-5xl font-bold font-heading text-white tracking-tight">Establish High-Volume Frameworks</h2>
+        <p class="text-emerald-100/70 text-sm md:text-base max-w-xl mx-auto">Interface direct processing options with procurement managers. Instant spot pricing updates and supply matrix documentation available.</p>
+        <div class="pt-4 flex flex-wrap justify-center gap-4">
+          <a href="wholesale.html" class="bg-amber-500 hover:bg-amber-600 text-white px-8 py-4 rounded-xl font-semibold text-xs tracking-wider uppercase shadow-xl transition-all">
+            Initiate Wholesale Intake
+          </a>
+          <a href="contact.html" class="bg-white/10 hover:bg-white/20 border border-white/20 backdrop-blur-md text-white px-8 py-4 rounded-xl font-semibold text-xs tracking-wider uppercase transition-all">
+            Secure Sample Allocation
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- MODERN MINIMALIST SYSTEM FOOTER ARCHITECTURE -->
+  <footer class="w-full bg-gray-950 text-gray-400 text-xs py-16 border-t border-gray-900">
+    <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-4 gap-12 mb-12">
+      <div class="space-y-4">
+        <div class="text-white font-bold text-base tracking-wider font-heading">VEDICAGRO CORP.</div>
+        <p class="text-gray-500 leading-relaxed pr-4 text-justify">Premium global aggregators and structural cleaning exporters of certified grade Indian grains, high-yield oil seeds, and premium unpolished organic pulses.</p>
+      </div>
+      <div>
+        <h5 class="text-white font-semibold uppercase tracking-widest mb-4">Operational Nodes</h5>
+        <ul class="space-y-2.5">
+          <li><a href="products.html" class="hover:text-white transition-colors">Grains Procurement</a></li>
+          <li><a href="products.html" class="hover:text-white transition-colors">Pulses Fractioning</a></li>
+          <li><a href="wholesale.html" class="hover:text-white transition-colors">Wholesale Operations Hub</a></li>
+          <li><a href="quality.html" class="hover:text-white transition-colors">Laboratory Metrics Terminal</a></li>
+        </ul>
+      </div>
+      <div>
+        <h5 class="text-white font-semibold uppercase tracking-widest mb-4">Corporate Info</h5>
+        <ul class="space-y-2.5">
+          <li><a href="about.html" class="hover:text-white transition-colors">Our History</a></li>
+          <li><a href="quality.html" class="hover:text-white transition-colors">Regulatory Compliance</a></li>
+          <li><a href="contact.html" class="hover:text-white transition-colors">Contact Matrix</a></li>
+        </ul>
+      </div>
+      <div>
+        <h5 class="text-white font-semibold uppercase tracking-widest mb-4">Corporate Headquarters</h5>
+        <p class="text-gray-500 leading-relaxed mb-3">VedicAgro Infrastructure Tower, Nariman Point, Mumbai, MH - 400021</p>
+        <p class="text-emerald-500 font-medium">intake@vedicagrocorporate.in</p>
+      </div>
+    </div>
+    <div class="max-w-7xl mx-auto px-6 border-t border-gray-900 pt-8 flex flex-col md:flex-row justify-between items-center text-gray-600">
+      <p>&copy; 2026 VedicAgro Corporation Private Limited. All production operational tracking reserved.</p>
+      <div class="space-x-6 mt-4 md:mt-0">
+        <a href="#" class="hover:text-gray-400 transition-colors">Privacy Infrastructure</a>
+        <a href="#" class="hover:text-gray-400 transition-colors">Terms of Trade Engagement</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- SCRIPT ENGINE INFRASTRUCTURE BUNDLES -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quality Assurance Protocols | Laboratory Validation</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: { extend: { colors: { primary: '#2E7D32', secondary: '#8D6E63', accent: '#F9A825', bgCustom: '#FFFDF7', darkCustom: '#1F2937' } } }
+    }
+  </script>
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="bg-bgCustom text-darkCustom font-sans">
+
+  <!-- NAVBAR LINK SYSTEM -->
+  <nav class="sticky top-0 z-50 glass-nav transition-all duration-300">
+    <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+      <a href="index.html" class="flex items-center space-x-3 group"><div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-emerald-700 to-amber-500 flex items-center justify-center text-white font-bold text-xl">V</div>
+      <div><span class="block text-lg font-bold tracking-tight text-emerald-900 font-heading">VEDICAGRO</span></div></a>
+      <div class="hidden lg:flex items-center space-x-8 font-medium text-sm text-gray-700">
+        <a href="index.html" class="hover:text-emerald-800">Home</a>
+        <a href="products.html" class="hover:text-emerald-800">Products</a>
+        <a href="wholesale.html" class="hover:text-emerald-800">Wholesale Operations</a>
+        <a href="quality.html" class="text-emerald-700 font-medium">Quality Assurance</a>
+        <a href="contact.html" class="hover:text-emerald-800">Contact</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- QUALITY SPECIFICATION MODULES -->
+  <section class="max-w-7xl mx-auto px-6 py-16">
+    <div class="text-center max-w-2xl mx-auto mb-16" data-aos="fade-up">
+      <span class="text-xs tracking-[0.25em] uppercase text-secondary font-semibold block mb-2">Zero-Tolerance Metrics</span>
+      <h1 class="text-3xl md:text-4xl font-bold tracking-tight font-heading text-emerald-950">Laboratory Verification & Certifications</h1>
+      <p class="text-gray-500 text-xs mt-3">We operate under APEDA, FSSAI, and international phytosanitary compliance baselines.</p>
+    </div>
+
+    <!-- SYSTEMATIC ACCORDION GROUP -->
+    <div class="max-w-3xl mx-auto space-y-4">
+      
+      <!-- Individual Accordion Block -->
+      <div class="bg-white border border-gray-100 rounded-2xl shadow-sm overflow-hidden" data-aos="fade-up">
+        <button class="accordion-header w-full flex justify-between items-center p-6 text-left outline-none transition-colors hover:bg-gray-50">
+          <span class="font-bold text-sm md:text-base text-gray-800 font-heading">Phytosanitary Residue Certification Matrix</span>
+          <svg class="icon-chevron w-5 h-5 text-emerald-800 transform transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+        </button>
+        <div class="accordion-body max-h-0 overflow-hidden transition-all duration-500 cubic-bezier(0.16, 1, 0.3, 1)">
+          <div class="p-6 pt-0 border-t border-gray-50 text-xs text-gray-600 leading-relaxed space-y-2 text-justify">
+            Every batch run undergoes multi-point pesticide screening at accredited NABL laboratories before logistics assignment numbers are issued. Certified analytical documentation matches global import threshold limits.
+          </div>
+        </div>
+      </div>
+
+      <div class="bg-white border border-gray-100 rounded-2xl shadow-sm overflow-hidden" data-aos="fade-up" data-aos-delay="100">
+        <button class="accordion-header w-full flex justify-between items-center p-6 text-left outline-none transition-colors hover:bg-gray-50">
+          <span class="font-bold text-sm md:text-base text-gray-800 font-heading">Moisture Profile Maintenance Controls</span>
+          <svg class="icon-chevron w-5 h-5 text-emerald-800 transform transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+        </button>
+        <div class="accordion-body max-h-0 overflow-hidden transition-all duration-500">
+          <div class="p-6 pt-0 border-t border-gray-50 text-xs text-gray-600 leading-relaxed text-justify">
+            Advanced mechanical moisture testers prevent storage micro-degradation. We guarantee absolute standard baseline moisture containment thresholds across grain and pulse classifications.
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <footer class="w-full bg-gray-950 text-gray-400 text-xs py-12 text-center text-gray-600 mt-20">
+    <p>&copy; 2026 VedicAgro Corporation Private Limited. All production operational tracking reserved.</p>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>

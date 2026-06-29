@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wholesale Operations | Commercial B2B Intake Portal</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: { extend: { colors: { primary: '#2E7D32', secondary: '#8D6E63', accent: '#F9A825', bgCustom: '#FFFDF7', darkCustom: '#1F2937' } } }
+    }
+  </script>
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="bg-bgCustom text-darkCustom font-sans">
+
+  <!-- NAVBAR LINK -->
+  <nav class="sticky top-0 z-50 glass-nav transition-all duration-300">
+    <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+      <a href="index.html" class="flex items-center space-x-3 group"><div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-emerald-700 to-amber-500 flex items-center justify-center text-white font-bold text-xl">V</div>
+      <div><span class="block text-lg font-bold tracking-tight text-emerald-900 font-heading">VEDICAGRO</span></div></a>
+      <div class="hidden lg:flex items-center space-x-8 font-medium text-sm text-gray-700">
+        <a href="index.html" class="hover:text-emerald-800">Home</a>
+        <a href="products.html" class="hover:text-emerald-800">Products</a>
+        <a href="wholesale.html" class="text-emerald-700 font-medium">Wholesale Operations</a>
+        <a href="quality.html" class="hover:text-emerald-800">Quality Assurance</a>
+        <a href="contact.html" class="hover:text-emerald-800">Contact</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- INTERACTIVE INTAKE LAYOUT -->
+  <section class="max-w-7xl mx-auto px-6 py-16 grid grid-cols-1 lg:grid-cols-12 gap-16">
+    
+    <!-- CONTEXT REGULATORY INFORMATION PANEL -->
+    <div class="lg:col-span-5 space-y-6" data-aos="fade-right">
+      <span class="text-xs font-bold tracking-[0.2em] text-secondary uppercase block">Supply Routing Parameters</span>
+      <h1 class="text-3xl md:text-4xl font-bold font-heading text-emerald-950 tracking-tight">Enterprise Bulk Intake Desk</h1>
+      <p class="text-gray-600 text-sm leading-relaxed text-justify">
+        We coordinate multi-ton logistics pipelines directly matching requirements for commercial flour mills, snack manufacturing organizations, and international shipping containers. Complete global customs validation documentation tracking is processed standard by our corporate regulatory compliance desk.
+      </p>
+      
+      <div class="space-y-4 pt-2">
+        <div class="flex items-start space-x-3 text-xs">
+          <div class="w-5 h-5 rounded-md bg-emerald-100 flex items-center justify-center text-emerald-800 font-bold mt-0.5">✓</div>
+          <div>
+            <h5 class="font-bold text-gray-800">Baseline MOQ Ceilings</h5>
+            <p class="text-gray-500 mt-0.5">Domestic tracking metrics establish standard 5 Metric Ton baseline loads per single product block run.</p>
+          </div>
+        </div>
+        <div class="flex items-start space-x-3 text-xs">
+          <div class="w-5 h-5 rounded-md bg-emerald-100 flex items-center justify-center text-emerald-800 font-bold mt-0.5">✓</div>
+          <div>
+            <h5 class="font-bold text-gray-800">Custom Freight Routing</h5>
+            <p class="text-gray-500 mt-0.5">Flexible FOB, CIF, or Ex-Warehouse storage options routed via major regional corporate logistics assets.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- TRANSACTION INTENT FORM SYSTEM -->
+    <div class="lg:col-span-7 bg-white border border-gray-100 rounded-3xl p-8 md:p-10 shadow-xl" data-aos="fade-left">
+      <h3 class="text-xl font-bold font-heading text-emerald-950 mb-6">Request Corporate Quote Matrix</h3>
+      
+      <form class="space-y-5 text-xs">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
+          <div class="space-y-2">
+            <label class="block font-semibold text-gray-700">Corporate Legal Identity</label>
+            <input type="text" placeholder="e.g. Apex Foods Overseas Ltd" class="w-full bg-gray-50 border border-gray-200 rounded-xl px-4 py-3.5 focus:border-emerald-700 outline-none transition-all">
+          </div>
+          <div class="space-y-2">
+            <label class="block font-semibold text-gray-700">Corporate Import/GSTIN Identification Number</label>
+            <input type="text" placeholder="Verified Registration Code" class="w-full bg-gray-50 border border-gray-200 rounded-xl px-4 py-3.5 focus:border-emerald-700 outline-none transition-all">
+          </div>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
+          <div class="space-y-2">
+            <label class="block font-semibold text-gray-700">Target Commodity Group</label>
+            <select class="w-full bg-gray-50 border border-gray-200 rounded-xl px-4 py-3.5 focus:border-emerald-700 outline-none transition-all text-gray-500">
+              <option>Select target commodity block...</option>
+              <option>Premium Sharbati Wheat Blocks</option>
+              <option>Unpolished Lentils / Pulses</option>
+              <option>High-Yield Extraction Mustard Seeds</option>
+            </select>
+          </div>
+          <div class="space-y-2">
+            <label class="block font-semibold text-gray-700">Volume Forecast Matrix (Metric Tons)</label>
+            <input type="number" placeholder="Min Baseline 5 MT" class="w-full bg-gray-50 border border-gray-200 rounded-xl px-4 py-3.5 focus:border-emerald-700 outline-none transition-all">
+          </div>
+        </div>
+
+        <div class="space-y-2">
+          <label class="block font-semibold text-gray-700">Specific Packaging or Cleanliness Criteria Notes</label>
+          <textarea rows="4" placeholder="Detail any custom moisture, ash content thresholds, or custom private labeling requirements here..." class="w-full bg-gray-50 border border-gray-200 rounded-xl px-4 py-3.5 focus:border-emerald-700 outline-none transition-all"></textarea>
+        </div>
+
+        <button type="submit" class="w-full btn-premium-gradient py-4 text-white font-semibold tracking-wider uppercase rounded-xl shadow-lg transition-transform">Submit Request to Allocation Committee</button>
+      </form>
+    </div>
+
+  </section>
+
+  <footer class="w-full bg-gray-950 text-gray-400 text-xs py-12 text-center text-gray-600 mt-20">
+    <p>&copy; 2026 VedicAgro Corporation Private Limited. All production operational tracking reserved.</p>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
